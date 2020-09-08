@@ -6,7 +6,6 @@ function Header() {
 
     <header>
       <h1>Julien Faro</h1>
-
     </header>
   );
 }
