@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Chathura:wght@100;400&family=Playfair+Display&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
 /* include border and padding in element width and height */
 
 * {
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* override browser default */
@@ -15,12 +15,8 @@ html, body {
   padding: 0;
 }
 
-h1, h2, h3 {
-  font-family: 'Chathura', sans-serif;
-  font-family: 'Playfair Display', serif;
-}
-
 h1 {
+  font-family: 'Playfair Display', serif;
   text-align: center;
   padding-top: 20px;
 }
@@ -29,14 +25,7 @@ h2 {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
-}
-
-h3 {
-  font-family: 'Montserrat', sans-serif;
-}
-
-p {
-  font-family: 'Montserrat', sans-serif;
+  font-weight: ;
 }
 
 hr {

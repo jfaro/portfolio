@@ -49,9 +49,7 @@ class Home extends React.Component {
           <section>
             <h3>Grow Tools</h3>
 
-            <p>
-              <a href="http://www.growtools.io" target="_blank" rel="noopener noreferrer" aria-label="grow tools">Grow tools</a> is a web app I have been working on that hosts a collection of tools to aid growers in getting their work done more efficiently. Honestly, the site is pretty useless. I have mostly been building it to familiarize myself with <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer" aria-label="React.js homepage">React</a> and because designing icons is fun. I intend to add a back-end to handle authentication so that users can create profiles. After adding user profiles, I would like to build a calendar feature that that would allow growers to log their processes to share with others.
-            </p>
+            <p><a href="http://www.growtools.io" target="_blank" rel="noopener noreferrer" aria-label="grow tools">Grow tools</a> is a web app I have been working on that hosts a collection of tools to aid growers in getting their work done more efficiently. Honestly, the site is pretty useless. I have mostly been building it to familiarize myself with <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer" aria-label="React.js homepage">React</a> and because designing icons is fun. I intend to add a back-end to handle authentication so that users can create profiles. After adding user profiles, I would like to build a calendar feature that that would allow growers to log their processes to share with others.</p>
 
             <div className="button-bar">
               <Button
@@ -61,33 +59,28 @@ class Home extends React.Component {
                 startIcon={<GitHubIcon />}
                 href="https://github.com/jfaro/grow-tools"
                 target="_blank"
-                aria-label="growtools github repository"
-              >GitHub Repository
-          </Button>
+                aria-label="growtools github repository">
+                GitHub Repository
+              </Button>
             </div>
-
 
             <Tilt
               tiltMaxAngleX='20'
               tiltMaxAngleY='20'
-              transitionSpeed='2000'
-            >
+              transitionSpeed='2000'>
               <img src={growtools_illustrator} alt="grow tools illustrator project" />
             </Tilt>
             <Tilt
               tiltMaxAngleX='20'
               tiltMaxAngleY='20'
-              transitionSpeed='2000'
-            >
+              transitionSpeed='2000'>
               <img src={growtools_landing} alt="grow tools landing page" />
             </Tilt>
           </section>
 
           <section>
             <h3>Storoc</h3>
-            <p>
-              During the 2020 Sp/Su term at UM, a special version of <a href="https://atlas.ai.umich.edu/course/EECS%20495/" target="_blank" rel="noopener noreferrer" aria-label="EECS 495 information">EECS 495: Software Development for Accessibility</a> was offered where students were tasked with designing and developing solutions to problems created by the COVID-19 pandemic. My group created a live occupancy monitoring system for businesses, using object detection algorithms that ran on a Raspberry Pi. My role within the group was to design and build the front-end.
-          </p>
+            <p>During the 2020 Sp/Su term at UM, a special version of <a href="https://atlas.ai.umich.edu/course/EECS%20495/" target="_blank" rel="noopener noreferrer" aria-label="EECS 495 information">EECS 495: Software Development for Accessibility</a> was offered where students were tasked with designing and developing solutions to problems created by the COVID-19 pandemic. My group created a live occupancy monitoring system for businesses, using object detection algorithms that ran on a Raspberry Pi. My role within the group was to design and build the front-end.</p>
             <div className="button-bar">
               <Button
                 variant="outlined"
@@ -116,14 +109,13 @@ class Home extends React.Component {
             <Tilt
               tiltMaxAngleX='20'
               tiltMaxAngleY='20'
-              transitionSpeed='2000'
-            >
+              transitionSpeed='2000'>
               <img src={storoc_landing} alt="Storoc landing page" />
             </Tilt>
           </section>
 
-
           <hr />
+
           <VisibilitySensor once>
             {({ isVisible }) => (
               <Spring delay={300} to={{ opacity: isVisible ? 1 : 0 }}>
@@ -139,8 +131,7 @@ class Home extends React.Component {
               <Tilt
                 tiltMaxAngleX='20'
                 tiltMaxAngleY='20'
-                transitionSpeed='2000'
-              >
+                transitionSpeed='2000'>
                 <img className="gallery-image" src={sketch_6} alt="drawing gallery" />
               </Tilt>
             </div>
@@ -148,8 +139,7 @@ class Home extends React.Component {
               <Tilt
                 tiltMaxAngleX='20'
                 tiltMaxAngleY='20'
-                transitionSpeed='2000'
-              >
+                transitionSpeed='2000'>
                 <img className="gallery-image" src={sketch_5} alt="drawing gallery" />
               </Tilt>
             </div>
@@ -158,11 +148,9 @@ class Home extends React.Component {
               <Tilt
                 tiltMaxAngleX='20'
                 tiltMaxAngleY='20'
-                transitionSpeed='2000'
-              >
+                transitionSpeed='2000'>
                 <img className="gallery-image" src={sketch_7} alt="drawing gallery" />
               </Tilt>
-
             </div>
             <div className="gallery-image-container">
               <Tilt
@@ -179,55 +167,41 @@ class Home extends React.Component {
               <Tilt
                 tiltMaxAngleX='20'
                 tiltMaxAngleY='20'
-                transitionSpeed='2000'
-              >
+                transitionSpeed='2000'>
                 <img className="gallery-image" src={sketch_3} alt="drawing gallery" />
               </Tilt>
-
             </div>
             <div className="gallery-image-container">
               <Tilt
                 tiltMaxAngleX='20'
                 tiltMaxAngleY='20'
-                transitionSpeed='2000'
-              >
+                transitionSpeed='2000'>
                 <img className="gallery-image" src={sketch_4} alt="drawing gallery" />
               </Tilt>
-
             </div>
 
             <div className="gallery-image-container">
               <Tilt
                 tiltMaxAngleX='20'
                 tiltMaxAngleY='20'
-                transitionSpeed='2000'
-              >
+                transitionSpeed='2000'>
                 <img className="gallery-image" src={sketch_1} alt="drawing gallery" />
               </Tilt>
-
             </div>
             <div className="gallery-image-container">
               <Tilt
                 tiltMaxAngleX='20'
                 tiltMaxAngleY='20'
-                transitionSpeed='2000'
-              >
+                transitionSpeed='2000'>
                 <img className="gallery-image" src={sketch_2} alt="drawing gallery" />
               </Tilt>
-
             </div>
-
-
-
-
 
           </div>
         </div>
       </div >
     );
-
   }
-
 }
 
 export default Home;
