@@ -5,7 +5,6 @@ import Button from '@material-ui/core/Button';
 import GitHubIcon from '@material-ui/icons/GitHub';
 
 import Header from '../components/Header'
-import Footer from '../components/Footer'
 
 // Images
 import growtools_illustrator from '../assets/images/growtools_illustrator.png'
@@ -60,7 +59,7 @@ class Home extends React.Component {
               <Button
                 variant="outlined"
                 color="primary"
-                style={{ alignSelf: 'center', marginBottom: '10px' }}
+                style={{ textAlign: 'center', fontFamily: 'Montserrat' }}
                 startIcon={<GitHubIcon />}
                 href="https://github.com/jfaro/grow-tools"
                 target="_blank"
@@ -95,7 +94,7 @@ class Home extends React.Component {
               <Button
                 variant="outlined"
                 color="secondary"
-                style={{ alignSelf: 'center', marginBottom: '10px', textAlign: 'center' }}
+                style={{ textAlign: 'center', fontFamily: 'Montserrat' }}
                 href="https://news.umich.edu/engineering-course-challenges-students-to-create-tech-solutions-for-covid-19/"
                 target="_blank"
                 aria-label="article about EECS 495"
@@ -107,7 +106,7 @@ class Home extends React.Component {
               <Button
                 variant="outlined"
                 color="primary"
-                style={{ alignSelf: 'center', marginBottom: '10px', textAlign: 'center' }}
+                style={{ textAlign: 'center', fontFamily: 'Montserrat' }}
                 startIcon={<GitHubIcon />}
                 href="https://github.com/storoc/storoc_ui"
                 target="_blank"
@@ -226,8 +225,6 @@ class Home extends React.Component {
 
           </div>
         </div>
-
-        <Footer />
       </div >
     );
 
