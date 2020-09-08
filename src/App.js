@@ -6,6 +6,7 @@ import {
   Route,
 } from "react-router-dom";
 //import { useSpring, animated } from 'react-spring'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Home from './pages/Home';
 
@@ -15,8 +16,6 @@ function App() {
   return (
     <Router>
       <Switch>
-
-
 
         <Route path="/other_route">
           {/*<Other page />*/}
