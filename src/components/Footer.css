@@ -1,0 +1,11 @@
+footer {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.icon-button-links {
+    padding: 20px;
+}
