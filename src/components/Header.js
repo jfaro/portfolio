@@ -11,8 +11,8 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 function Header() {
   return (
 
-    <header>
-      <h1>Julien Faro</h1>
+    <div className="header-bar">
+      <h1 className="title">Julien Faro</h1>
 
       <div className="header-buttons">
         {/* <IconButton
@@ -65,7 +65,7 @@ function Header() {
           GitHub
           </Button>
       </div>
-    </header>
+    </div>
   );
 }
 
