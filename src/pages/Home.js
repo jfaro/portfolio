@@ -22,7 +22,7 @@ import sketch_8 from '../assets/images/drawings/sketch_8.png'
 // Animations
 import Tilt from 'react-parallax-tilt'
 import { Spring } from "react-spring/renderprops";
-import VisibilitySensor from "../components/VisibilitySensor"
+import VisibilitySensor from "react-visibility-sensor";
 
 
 class Home extends React.Component {
@@ -120,7 +120,7 @@ class Home extends React.Component {
               tiltMaxAngleY='20'
               transitionSpeed='2000'
             >
-              <img src={storoc_landing} />
+              <img src={storoc_landing} alt="Storoc landing page" />
             </Tilt>
           </section>
 
@@ -143,7 +143,7 @@ class Home extends React.Component {
                 tiltMaxAngleY='20'
                 transitionSpeed='2000'
               >
-                <img className="gallery-image" src={sketch_6} />
+                <img className="gallery-image" src={sketch_6} alt="Drawing gallery image" />
               </Tilt>
             </div>
             <div className="gallery-image-container">
@@ -152,7 +152,7 @@ class Home extends React.Component {
                 tiltMaxAngleY='20'
                 transitionSpeed='2000'
               >
-                <img className="gallery-image" src={sketch_5} />
+                <img className="gallery-image" src={sketch_5} alt="Drawing gallery image" />
               </Tilt>
             </div>
 
@@ -162,7 +162,7 @@ class Home extends React.Component {
                 tiltMaxAngleY='20'
                 transitionSpeed='2000'
               >
-                <img className="gallery-image" src={sketch_7} />
+                <img className="gallery-image" src={sketch_7} alt="Drawing gallery image" />
               </Tilt>
 
             </div>
@@ -172,28 +172,7 @@ class Home extends React.Component {
                 tiltMaxAngleY='20'
                 transitionSpeed='2000'
               >
-                <img className="gallery-image" src={sketch_8} />
-              </Tilt>
-
-            </div>
-
-            <div className="gallery-image-container">
-              <Tilt
-                tiltMaxAngleX='20'
-                tiltMaxAngleY='20'
-                transitionSpeed='2000'
-              >
-                <img className="gallery-image" src={sketch_3} />
-              </Tilt>
-
-            </div>
-            <div className="gallery-image-container">
-              <Tilt
-                tiltMaxAngleX='20'
-                tiltMaxAngleY='20'
-                transitionSpeed='2000'
-              >
-                <img className="gallery-image" src={sketch_4} />
+                <img className="gallery-image" src={sketch_8} alt="Drawing gallery image" />
               </Tilt>
 
             </div>
@@ -204,7 +183,7 @@ class Home extends React.Component {
                 tiltMaxAngleY='20'
                 transitionSpeed='2000'
               >
-                <img className="gallery-image" src={sketch_1} />
+                <img className="gallery-image" src={sketch_3} alt="Drawing gallery image" />
               </Tilt>
 
             </div>
@@ -214,7 +193,28 @@ class Home extends React.Component {
                 tiltMaxAngleY='20'
                 transitionSpeed='2000'
               >
-                <img className="gallery-image" src={sketch_2} />
+                <img className="gallery-image" src={sketch_4} alt="Drawing gallery image" />
+              </Tilt>
+
+            </div>
+
+            <div className="gallery-image-container">
+              <Tilt
+                tiltMaxAngleX='20'
+                tiltMaxAngleY='20'
+                transitionSpeed='2000'
+              >
+                <img className="gallery-image" src={sketch_1} alt="Drawing gallery image" />
+              </Tilt>
+
+            </div>
+            <div className="gallery-image-container">
+              <Tilt
+                tiltMaxAngleX='20'
+                tiltMaxAngleY='20'
+                transitionSpeed='2000'
+              >
+                <img className="gallery-image" src={sketch_2} alt="Drawing gallery image" />
               </Tilt>
 
             </div>
