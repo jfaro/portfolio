@@ -5,6 +5,7 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
+//import { useSpring, animated } from 'react-spring'
 
 import Home from './pages/Home';
 
@@ -15,15 +16,17 @@ function App() {
     <Router>
       <Switch>
 
-          <Route exact path="/">
-            <Home />
-          </Route>
 
-          <Route path="/other_route">
-            {/*<Other page />*/}
-          </Route>
 
-        </Switch>
+        <Route path="/other_route">
+          {/*<Other page />*/}
+        </Route>
+
+        <Route exact path="/">
+          <Home />
+        </Route>
+
+      </Switch>
     </Router>
   );
 }
