@@ -13,7 +13,7 @@ function Header() {
     <header>
       <h1>Julien Faro</h1>
 
-      <div className="button-bar">
+      <div className="header-buttons">
         <IconButton
           href="https://www.instagram.com/julienfaro/"
           target="_blank"

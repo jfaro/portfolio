@@ -7,11 +7,10 @@ header {
   padding: 10px 20px;
 }
 
-.icon-button-links {
+.header-buttons {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: auto;
+  height: 80px;
   background-color: red;
 }
