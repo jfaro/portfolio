@@ -33,7 +33,6 @@ class Home extends React.Component {
 
       <div className="home" >
         <Header />
-        <p>VOID design application (TESTING) </p>
 
         <hr />
 
