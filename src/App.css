@@ -46,3 +46,10 @@ hr {
 section+section {
   padding-top: 40px;
 }
+
+.button-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}

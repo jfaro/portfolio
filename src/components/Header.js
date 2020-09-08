@@ -11,33 +11,10 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 function Header() {
   return (
 
-    <div className="header-bar">
-      <h1 className="title">Julien Faro</h1>
+    <div>
+      <h1 className="header-title">Julien Faro</h1>
 
-      <div className="header-buttons">
-        {/* <IconButton
-          href="https://www.instagram.com/julienfaro/"
-          target="_blank"
-          aria-label="instagram"
-        >
-          <InstagramIcon style={{ color: '#000000' }} fontSize="large" />
-        </IconButton>
-
-        <IconButton
-          href="https://www.linkedin.com/in/julien-faro-b5b856177/"
-          target="_blank"
-          aria-label="linkedin"
-        >
-          <LinkedInIcon style={{ color: '#000000' }} fontSize="large" />
-        </IconButton>
-
-        <IconButton
-          href="https://github.com/jfaro"
-          target="_blank"
-          aria-label="github"
-        >
-          <GitHubIcon style={{ color: '#000000' }} fontSize="larger" />
-        </IconButton> */}
+      <div className="button-bar">
         <Button
           style={{ textAlign: 'center', fontFamily: 'Montserrat', color: '#000000' }}
           startIcon={<InstagramIcon />}
@@ -70,3 +47,28 @@ function Header() {
 }
 
 export default Header;
+
+{/* <div className="header-buttons">
+        {/* <IconButton
+          href="https://www.instagram.com/julienfaro/"
+          target="_blank"
+          aria-label="instagram"
+        >
+          <InstagramIcon style={{ color: '#000000' }} fontSize="large" />
+        </IconButton>
+
+        <IconButton
+          href="https://www.linkedin.com/in/julien-faro-b5b856177/"
+          target="_blank"
+          aria-label="linkedin"
+        >
+          <LinkedInIcon style={{ color: '#000000' }} fontSize="large" />
+        </IconButton>
+
+        <IconButton
+          href="https://github.com/jfaro"
+          target="_blank"
+          aria-label="github"
+        >
+          <GitHubIcon style={{ color: '#000000' }} fontSize="larger" />
+        </IconButton> */}

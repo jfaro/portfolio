@@ -1,20 +1,6 @@
-.header-bar {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  align-items: center;
-  background-color: red;
-  padding-top: 0;
-}
-
-.title {
-  padding: 0;
+.header-title {
+  flex: 1;
+  padding-top: 40px;
   margin: 0;
-  background-color: green;
   width: 100%;
-}
-
-.header-buttons {
-  display: flex;
-  justify-content: center;
 }
