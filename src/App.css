@@ -43,6 +43,8 @@ section {
   padding: 20px;
   border: thin solid rgb(229, 229, 229);
   border-radius: 10px;
+  margin-left: 40px;
+  margin-right: 40px;
   margin-bottom: 40px;
 }
 
@@ -50,6 +52,7 @@ section+section {}
 
 .button-bar {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   padding: 20px;

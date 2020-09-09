@@ -29,6 +29,7 @@ class Home extends React.Component {
       <div className="home" >
 
         <Header />
+
         <hr />
 
         <div className="page-body">
@@ -44,7 +45,7 @@ class Home extends React.Component {
               <Button
                 variant="outlined"
                 color="primary"
-                style={{ textAlign: 'center', fontFamily: 'Montserrat' }}
+                style={{ textAlign: 'center', fontFamily: 'Montserrat', margin: '5px' }}
                 startIcon={<GitHubIcon />}
                 href="https://github.com/jfaro/grow-tools"
                 target="_blank"
@@ -76,19 +77,17 @@ class Home extends React.Component {
               <Button
                 variant="outlined"
                 color="secondary"
-                style={{ textAlign: 'center', fontFamily: 'Montserrat' }}
+                style={{ textAlign: 'center', fontFamily: 'Montserrat', margin: '5px' }}
                 href="https://news.umich.edu/engineering-course-challenges-students-to-create-tech-solutions-for-covid-19/"
                 target="_blank"
                 aria-label="article about EECS 495"
               >More Information
           </Button>
 
-              <div style={{ width: '10px' }} />
-
               <Button
                 variant="outlined"
                 color="primary"
-                style={{ textAlign: 'center', fontFamily: 'Montserrat' }}
+                style={{ textAlign: 'center', fontFamily: 'Montserrat', margin: '5px' }}
                 startIcon={<GitHubIcon />}
                 href="https://github.com/storoc/storoc_ui"
                 target="_blank"
