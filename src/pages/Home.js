@@ -1,5 +1,4 @@
 import React from 'react'
-import './Home.css'
 
 import Button from '@material-ui/core/Button';
 import GitHubIcon from '@material-ui/icons/GitHub';
@@ -19,175 +18,154 @@ import sketch_6 from '../assets/images/drawings/sketch_6.png'
 import sketch_7 from '../assets/images/drawings/sketch_7.png'
 import sketch_8 from '../assets/images/drawings/sketch_8.png'
 
-// Animations
 import Tilt from 'react-parallax-tilt'
 
-class Home extends React.Component {
 
-  render() {
-    return (
-      <div className="home" >
+function Home() {
 
-        <Header />
+  return (
+    <div className="page-container" >
 
-        <hr />
+      <Header />
 
-        <div className="page-body">
+      <hr />
 
-          <h2>Web Design + Development</h2>
+      <div className="page-body">
+        <h2>Web Design + Development</h2>
 
-          <section>
-            <h3>Grow Tools</h3>
+        <section>
+          <h3>Grow Tools</h3>
 
-            <p><a href="http://www.growtools.io" target="_blank" rel="noopener noreferrer" aria-label="grow tools">Grow tools</a> is a web app I have been working on that hosts a collection of tools to aid growers in getting their work done more efficiently. Honestly, the site is pretty useless. I have mostly been building it to familiarize myself with <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer" aria-label="React.js homepage">React</a> and because designing icons is fun. I intend to add a back end to handle authentication so that users can create profiles. After adding user profiles, I would like to build a calendar feature that that would allow growers to log their processes to share with others.</p>
+          <p><a href="http://www.growtools.io" target="_blank" rel="noopener noreferrer" aria-label="grow tools">Grow tools</a> is a web app I have been working on that hosts a collection of tools to aid growers in getting their work done more efficiently. Honestly, the site is pretty useless. I have mostly been building it to familiarize myself with <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer" aria-label="React.js homepage">React</a> and because designing icons is fun. I intend to add a back end to handle authentication so that users can create profiles. After adding user profiles, I would like to build a calendar feature that that would allow growers to log their processes to share with others.</p>
 
-            <div className="button-bar">
-              <Button
-                variant="outlined"
-                color="primary"
-                style={{ textAlign: 'center', fontFamily: 'Montserrat', margin: '5px' }}
-                startIcon={<GitHubIcon />}
-                href="https://github.com/jfaro/grow-tools"
-                target="_blank"
-                aria-label="growtools github repository">
-                GitHub Repository
+          <div className="button-bar">
+            <Button
+              variant="outlined"
+              color="primary"
+              style={{ textAlign: 'center', fontFamily: 'Montserrat', margin: '5px' }}
+              startIcon={<GitHubIcon />}
+              href="https://github.com/jfaro/grow-tools"
+              target="_blank"
+              aria-label="growtools github repository">
+              GitHub Repository
               </Button>
-            </div>
+          </div>
 
+          <div className="gallery-image-container">
             <Tilt
               tiltMaxAngleX='20'
               tiltMaxAngleY='20'
               transitionSpeed='2000'>
-              <img src={growtools_illustrator} alt="grow tools illustrator project" />
+              <img className="gallery-image" src={growtools_illustrator} alt="grow tools illustrator project" />
             </Tilt>
             <Tilt
               tiltMaxAngleX='20'
               tiltMaxAngleY='20'
               transitionSpeed='2000'>
-              <img src={growtools_landing} alt="grow tools landing page" />
+              <img className="gallery-image" src={growtools_landing} alt="grow tools landing page" />
             </Tilt>
-          </section>
+          </div>
+        </section>
 
-          <section>
-            <h3>Storoc</h3>
+        <section>
+          <h3>Storoc</h3>
 
-            <p>During the 2020 Sp/Su term at UM, a special version of <a href="https://atlas.ai.umich.edu/course/EECS%20495/" target="_blank" rel="noopener noreferrer" aria-label="EECS 495 information">EECS 495: Software Development for Accessibility</a> was offered where students were tasked with designing and developing solutions to problems created by the COVID-19 pandemic. My group created a live occupancy monitoring system for businesses, using object detection algorithms that ran on a Raspberry Pi. My role within the group was to design and build the front end.</p>
+          <p>During the 2020 Sp/Su term at UM, a special version of <a href="https://atlas.ai.umich.edu/course/EECS%20495/" target="_blank" rel="noopener noreferrer" aria-label="EECS 495 information">EECS 495: Software Development for Accessibility</a> was offered where students were tasked with designing and developing solutions to problems created by the COVID-19 pandemic. My group created a live occupancy monitoring system for businesses, using object detection algorithms that ran on a Raspberry Pi. My role within the group was to design and build the front end.</p>
 
-            <div className="button-bar">
-              <Button
-                variant="outlined"
-                color="secondary"
-                style={{ textAlign: 'center', fontFamily: 'Montserrat', margin: '5px' }}
-                href="https://news.umich.edu/engineering-course-challenges-students-to-create-tech-solutions-for-covid-19/"
-                target="_blank"
-                aria-label="article about EECS 495"
-              >More Information
+          <div className="button-bar">
+            <Button
+              variant="outlined"
+              color="secondary"
+              style={{ textAlign: 'center', fontFamily: 'Montserrat', margin: '5px' }}
+              href="https://news.umich.edu/engineering-course-challenges-students-to-create-tech-solutions-for-covid-19/"
+              target="_blank"
+              aria-label="article about EECS 495"
+            >More Information
           </Button>
 
-              <Button
-                variant="outlined"
-                color="primary"
-                style={{ textAlign: 'center', fontFamily: 'Montserrat', margin: '5px' }}
-                startIcon={<GitHubIcon />}
-                href="https://github.com/storoc/storoc_ui"
-                target="_blank"
-                aria-label="storoc github repository"
-              >GitHub Repository
+            <Button
+              variant="outlined"
+              color="primary"
+              style={{ textAlign: 'center', fontFamily: 'Montserrat', margin: '5px' }}
+              startIcon={<GitHubIcon />}
+              href="https://github.com/storoc/storoc_ui"
+              target="_blank"
+              aria-label="storoc github repository"
+            >GitHub Repository
           </Button>
-            </div>
+          </div>
 
+          <div className="gallery-image-container">
             <Tilt
               tiltMaxAngleX='20'
               tiltMaxAngleY='20'
               transitionSpeed='2000'>
               <img src={storoc_landing} alt="Storoc landing page" />
             </Tilt>
-          </section>
+          </div>
 
-          <hr />
+        </section>
 
-          <h2>Drawing + Painting</h2>
 
-          <section>
+        <hr />
 
-            <div className="grid-container">
+        <h2>Drawing + Painting</h2>
 
-              <div className="gallery-image-container">
-                <Tilt
-                  tiltMaxAngleX='20'
-                  tiltMaxAngleY='20'
-                  transitionSpeed='2000'>
-                  <img className="gallery-image" src={sketch_6} alt="drawing gallery" />
-                </Tilt>
-              </div>
-              <div className="gallery-image-container">
-                <Tilt
-                  tiltMaxAngleX='20'
-                  tiltMaxAngleY='20'
-                  transitionSpeed='2000'>
-                  <img className="gallery-image" src={sketch_5} alt="drawing gallery" />
-                </Tilt>
-              </div>
-
-              <div className="gallery-image-container">
-                <Tilt
-                  tiltMaxAngleX='20'
-                  tiltMaxAngleY='20'
-                  transitionSpeed='2000'>
-                  <img className="gallery-image" src={sketch_7} alt="drawing gallery" />
-                </Tilt>
-              </div>
-              <div className="gallery-image-container">
-                <Tilt
-                  tiltMaxAngleX='20'
-                  tiltMaxAngleY='20'
-                  transitionSpeed='2000'
-                >
-                  <img className="gallery-image" src={sketch_8} alt="drawing gallery" />
-                </Tilt>
-
-              </div>
-
-              <div className="gallery-image-container">
-                <Tilt
-                  tiltMaxAngleX='20'
-                  tiltMaxAngleY='20'
-                  transitionSpeed='2000'>
-                  <img className="gallery-image" src={sketch_3} alt="drawing gallery" />
-                </Tilt>
-              </div>
-              <div className="gallery-image-container">
-                <Tilt
-                  tiltMaxAngleX='20'
-                  tiltMaxAngleY='20'
-                  transitionSpeed='2000'>
-                  <img className="gallery-image" src={sketch_4} alt="drawing gallery" />
-                </Tilt>
-              </div>
-
-              <div className="gallery-image-container">
-                <Tilt
-                  tiltMaxAngleX='20'
-                  tiltMaxAngleY='20'
-                  transitionSpeed='2000'>
-                  <img className="gallery-image" src={sketch_1} alt="drawing gallery" />
-                </Tilt>
-              </div>
-              <div className="gallery-image-container">
-                <Tilt
-                  tiltMaxAngleX='20'
-                  tiltMaxAngleY='20'
-                  transitionSpeed='2000'>
-                  <img className="gallery-image" src={sketch_2} alt="drawing gallery" />
-                </Tilt>
-              </div>
-
-            </div>
-          </section>
-        </div>
-      </div >
-    );
-  }
+        <section>
+          <div className="gallery-image-container">
+            <Tilt
+              tiltMaxAngleX='20'
+              tiltMaxAngleY='20'
+              transitionSpeed='2000'>
+              <img className="gallery-image" src={sketch_6} alt="drawing gallery" />
+            </Tilt>
+            <Tilt
+              tiltMaxAngleX='20'
+              tiltMaxAngleY='20'
+              transitionSpeed='2000'>
+              <img className="gallery-image" src={sketch_5} alt="drawing gallery" />
+            </Tilt>
+            <Tilt
+              tiltMaxAngleX='20'
+              tiltMaxAngleY='20'
+              transitionSpeed='2000'>
+              <img className="gallery-image" src={sketch_7} alt="drawing gallery" />
+            </Tilt>
+            <Tilt
+              tiltMaxAngleX='20'
+              tiltMaxAngleY='20'
+              transitionSpeed='2000'>
+              <img className="gallery-image" src={sketch_8} alt="drawing gallery" />
+            </Tilt>
+            <Tilt
+              tiltMaxAngleX='20'
+              tiltMaxAngleY='20'
+              transitionSpeed='2000'>
+              <img className="gallery-image" src={sketch_3} alt="drawing gallery" />
+            </Tilt>
+            <Tilt
+              tiltMaxAngleX='20'
+              tiltMaxAngleY='20'
+              transitionSpeed='2000'>
+              <img className="gallery-image" src={sketch_4} alt="drawing gallery" />
+            </Tilt>
+            <Tilt
+              tiltMaxAngleX='20'
+              tiltMaxAngleY='20'
+              transitionSpeed='2000'>
+              <img className="gallery-image" src={sketch_1} alt="drawing gallery" />
+            </Tilt>
+            <Tilt
+              tiltMaxAngleX='20'
+              tiltMaxAngleY='20'
+              transitionSpeed='2000'>
+              <img className="gallery-image" src={sketch_2} alt="drawing gallery" />
+            </Tilt>
+          </div>
+        </section>
+      </div>
+    </div >
+  );
 }
 
 export default Home;
