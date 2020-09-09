@@ -2,7 +2,6 @@ import React from "react";
 import "./Header.css";
 
 import Button from "@material-ui/core/Button"
-import IconButton from "@material-ui/core/IconButton";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from '@material-ui/icons/GitHub';

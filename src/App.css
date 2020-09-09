@@ -5,6 +5,7 @@
 * {
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
+  color: rgb(44, 44, 44);
 }
 
 /* override browser default */
@@ -19,12 +20,19 @@ h1 {
   font-family: 'Playfair Display', serif;
   text-align: center;
   padding-top: 20px;
+  color: rgb(0, 0, 0);
 }
 
 h2 {
+  font-family: 'Playfair Display', serif;
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
+  color: rgb(0, 0, 0);
+}
+
+h3 {
+  color: rgb(0, 0, 0);
 }
 
 hr {
