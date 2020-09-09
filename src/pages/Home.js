@@ -21,9 +21,6 @@ import sketch_8 from '../assets/images/drawings/sketch_8.png'
 
 // Animations
 import Tilt from 'react-parallax-tilt'
-import { Spring } from "react-spring/renderprops";
-import VisibilitySensor from "react-visibility-sensor";
-
 
 class Home extends React.Component {
 
@@ -36,15 +33,7 @@ class Home extends React.Component {
 
         <div className="page-body">
 
-          <VisibilitySensor once>
-            {({ isVisible }) => (
-              <Spring delay={300} to={{ opacity: isVisible ? 1 : 0 }}>
-                {({ opacity }) =>
-                  <h2 style={{ opacity }}>Web Design + Development</h2>
-                }
-              </Spring>
-            )}
-          </VisibilitySensor>
+          <h2>Web Design + Development</h2>
 
           <section>
             <h3>Grow Tools</h3>
@@ -118,88 +107,84 @@ class Home extends React.Component {
 
           <hr />
 
-          <VisibilitySensor once>
-            {({ isVisible }) => (
-              <Spring delay={300} to={{ opacity: isVisible ? 1 : 0 }}>
-                {({ opacity }) =>
-                  <h2 style={{ opacity }}>Drawing</h2>
-                }
-              </Spring>
-            )}
-          </VisibilitySensor>
-          <div className="grid-container">
+          <h2>Drawing + Painting</h2>
 
-            <div className="gallery-image-container">
-              <Tilt
-                tiltMaxAngleX='20'
-                tiltMaxAngleY='20'
-                transitionSpeed='2000'>
-                <img className="gallery-image" src={sketch_6} alt="drawing gallery" />
-              </Tilt>
-            </div>
-            <div className="gallery-image-container">
-              <Tilt
-                tiltMaxAngleX='20'
-                tiltMaxAngleY='20'
-                transitionSpeed='2000'>
-                <img className="gallery-image" src={sketch_5} alt="drawing gallery" />
-              </Tilt>
-            </div>
+          <section>
 
-            <div className="gallery-image-container">
-              <Tilt
-                tiltMaxAngleX='20'
-                tiltMaxAngleY='20'
-                transitionSpeed='2000'>
-                <img className="gallery-image" src={sketch_7} alt="drawing gallery" />
-              </Tilt>
-            </div>
-            <div className="gallery-image-container">
-              <Tilt
-                tiltMaxAngleX='20'
-                tiltMaxAngleY='20'
-                transitionSpeed='2000'
-              >
-                <img className="gallery-image" src={sketch_8} alt="drawing gallery" />
-              </Tilt>
+            <div className="grid-container">
+
+              <div className="gallery-image-container">
+                <Tilt
+                  tiltMaxAngleX='20'
+                  tiltMaxAngleY='20'
+                  transitionSpeed='2000'>
+                  <img className="gallery-image" src={sketch_6} alt="drawing gallery" />
+                </Tilt>
+              </div>
+              <div className="gallery-image-container">
+                <Tilt
+                  tiltMaxAngleX='20'
+                  tiltMaxAngleY='20'
+                  transitionSpeed='2000'>
+                  <img className="gallery-image" src={sketch_5} alt="drawing gallery" />
+                </Tilt>
+              </div>
+
+              <div className="gallery-image-container">
+                <Tilt
+                  tiltMaxAngleX='20'
+                  tiltMaxAngleY='20'
+                  transitionSpeed='2000'>
+                  <img className="gallery-image" src={sketch_7} alt="drawing gallery" />
+                </Tilt>
+              </div>
+              <div className="gallery-image-container">
+                <Tilt
+                  tiltMaxAngleX='20'
+                  tiltMaxAngleY='20'
+                  transitionSpeed='2000'
+                >
+                  <img className="gallery-image" src={sketch_8} alt="drawing gallery" />
+                </Tilt>
+
+              </div>
+
+              <div className="gallery-image-container">
+                <Tilt
+                  tiltMaxAngleX='20'
+                  tiltMaxAngleY='20'
+                  transitionSpeed='2000'>
+                  <img className="gallery-image" src={sketch_3} alt="drawing gallery" />
+                </Tilt>
+              </div>
+              <div className="gallery-image-container">
+                <Tilt
+                  tiltMaxAngleX='20'
+                  tiltMaxAngleY='20'
+                  transitionSpeed='2000'>
+                  <img className="gallery-image" src={sketch_4} alt="drawing gallery" />
+                </Tilt>
+              </div>
+
+              <div className="gallery-image-container">
+                <Tilt
+                  tiltMaxAngleX='20'
+                  tiltMaxAngleY='20'
+                  transitionSpeed='2000'>
+                  <img className="gallery-image" src={sketch_1} alt="drawing gallery" />
+                </Tilt>
+              </div>
+              <div className="gallery-image-container">
+                <Tilt
+                  tiltMaxAngleX='20'
+                  tiltMaxAngleY='20'
+                  transitionSpeed='2000'>
+                  <img className="gallery-image" src={sketch_2} alt="drawing gallery" />
+                </Tilt>
+              </div>
 
             </div>
-
-            <div className="gallery-image-container">
-              <Tilt
-                tiltMaxAngleX='20'
-                tiltMaxAngleY='20'
-                transitionSpeed='2000'>
-                <img className="gallery-image" src={sketch_3} alt="drawing gallery" />
-              </Tilt>
-            </div>
-            <div className="gallery-image-container">
-              <Tilt
-                tiltMaxAngleX='20'
-                tiltMaxAngleY='20'
-                transitionSpeed='2000'>
-                <img className="gallery-image" src={sketch_4} alt="drawing gallery" />
-              </Tilt>
-            </div>
-
-            <div className="gallery-image-container">
-              <Tilt
-                tiltMaxAngleX='20'
-                tiltMaxAngleY='20'
-                transitionSpeed='2000'>
-                <img className="gallery-image" src={sketch_1} alt="drawing gallery" />
-              </Tilt>
-            </div>
-            <div className="gallery-image-container">
-              <Tilt
-                tiltMaxAngleX='20'
-                tiltMaxAngleY='20'
-                transitionSpeed='2000'>
-                <img className="gallery-image" src={sketch_2} alt="drawing gallery" />
-              </Tilt>
-            </div>
-
-          </div>
+          </section>
         </div>
       </div >
     );

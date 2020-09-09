@@ -39,9 +39,14 @@ hr {
   width: 80%;
 }
 
-section+section {
-  padding-top: 40px;
+section {
+  padding: 20px;
+  border: thin solid rgb(229, 229, 229);
+  border-radius: 10px;
+  margin-bottom: 40px;
 }
+
+section+section {}
 
 .button-bar {
   display: flex;
