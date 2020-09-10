@@ -72,7 +72,7 @@ function Home() {
           <h3>Storoc</h3>
 
           <p>During the 2020 Sp/Su term at UM, a special version of <a href="https://atlas.ai.umich.edu/course/EECS%20495/" target="_blank" rel="noopener noreferrer" aria-label="EECS 495 information">EECS 495: Software Development for Accessibility</a> was offered where students were tasked with designing and developing solutions to problems created by the COVID-19 pandemic. My group created a live occupancy monitoring system for businesses, using object detection algorithms that ran on a Raspberry Pi. My role within the group was to design and build the front end.</p>
-InfoIcon
+
           <div className="button-bar">
             <Button
               variant="outlined"
