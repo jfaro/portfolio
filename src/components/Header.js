@@ -1,48 +1,19 @@
 import React from "react";
+import header_image from '../assets/header_1920.png'
+import SocialButtonBar from "./SocialButtonBar";
+import NavigationTabs from './NavigationTabs'
 
-import Button from "@material-ui/core/Button"
-import InstagramIcon from "@material-ui/icons/Instagram";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import GitHubIcon from '@material-ui/icons/GitHub';
 
-import TemporaryDrawer from "./TemporaryDrawer";
-
-function Header() {
+function Header(props) {
 
   return (
-    <div>
-      <h1 className="header-title">Julien Faro</h1>
-
-      <div className="button-bar">
-        <Button
-          style={{ textAlign: 'center', fontFamily: 'Montserrat', color: '#000000' }}
-          startIcon={<InstagramIcon />}
-          href="https://www.instagram.com/julienfaro/"
-          target="_blank"
-          aria-label="instagram">
-          Instagram
-          </Button>
-
-        <Button
-          style={{ textAlign: 'center', fontFamily: 'Montserrat', color: '#000000' }}
-          startIcon={<LinkedInIcon />}
-          href="https://www.linkedin.com/in/julien-faro-b5b856177/"
-          target="_blank"
-          aria-label="linkedin">
-          LinkedIn
-          </Button>
-
-        <Button
-          style={{ textAlign: 'center', fontFamily: 'Montserrat', color: '#000000' }}
-          startIcon={<GitHubIcon />}
-          href="https://github.com/jfaro"
-          target="_blank"
-          aria-label="github">
-          GitHub
-          </Button>
+    <div className="header-container">
+      <div className="header-image-container">
+        <img className="header-image" src={header_image} />
       </div>
-
-      {/* <TemporaryDrawer /> */}
+      <SocialButtonBar />
+      <hr />
+      <NavigationTabs />
     </div>
   );
 }
