@@ -144,13 +144,6 @@ svg {
     vertical-align: middle;
 }
 
-section {
-    padding: 20px;
-    border: thin solid rgb(229, 229, 229);
-    border-radius: 10px;
-    margin-bottom: 40px;
-}
-
 img {
     max-width: 100%;
     height: auto;

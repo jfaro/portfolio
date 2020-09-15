@@ -16,20 +16,22 @@ import Drawing from './pages/Drawing'
 function App() {
   return (
     <BrowserRouter>
-      <div className="page-container">
-        <Route
-          path="/"
-          render={({ location }) => (
-            <Fragment>
-              <Header />
-              <Switch>
-                <Route path="/web-development" render={() => <WebDevelopment />} />
-                <Route path="/drawing" render={() => <Drawing />} />
-                <Route path="/" render={() => <Home />} />
-              </Switch>
-            </Fragment>
-          )}
-        />
+      <div className="app">
+        <div className="page-container">
+          <Route
+            path="/"
+            render={({ location }) => (
+              <Fragment>
+                <Header />
+                <Switch>
+                  <Route path="/web-development" render={() => <WebDevelopment />} />
+                  <Route path="/drawing" render={() => <Drawing />} />
+                  <Route path="/" render={() => <Home />} />
+                </Switch>
+              </Fragment>
+            )}
+          />
+        </div>
       </div>
     </BrowserRouter >
   );
